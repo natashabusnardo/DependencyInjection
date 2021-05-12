@@ -1,3 +1,4 @@
+package model;
 import java.text.SimpleDateFormat;
 import java.text.ParseException;
 import java.util.Date;
@@ -28,13 +29,8 @@ public class Aluno extends Pessoa {
 		return dataNasc;
 	}
 
-	public void setDataNasc(String dataNasc) {
-		try {
-			this.dataNasc = new SimpleDateFormat("dd/MM/yyyy").parse(dataNasc);
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public void setDataNasc(Date dataNasc) {
+		this.dataNasc = dataNasc;
 	}
 
 	public String getEmail() {

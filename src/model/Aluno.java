@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Aluno extends Pessoa {
 	private int matricula;
-	private int cpf;
+	private String cpf;
 	private Date dataNasc;
 	private String email;
 
@@ -17,11 +17,11 @@ public class Aluno extends Pessoa {
 		this.matricula = matricula;
 	}
 
-	public int getCpf() {
+	public String getCpf() {
 		return cpf;
 	}
 
-	public void setCpf(int cpf) {
+	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
 

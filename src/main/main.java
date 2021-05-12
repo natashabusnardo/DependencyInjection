@@ -37,9 +37,9 @@ public class main {
 		
 		aluno.setNome("Jefferson");
 		aluno.setMatricula(70854517);
-		aluno.setCpf(1088601958);
+		aluno.setCpf("123.456.789-11");
 		aluno.setDataNasc(ListaAlunos.retornaData("12/01/2000"));
-		aluno.setEmail("guichato@gmail.com");
+		aluno.setEmail("email@email.com");
 		
 		alunos.add(aluno);
 		

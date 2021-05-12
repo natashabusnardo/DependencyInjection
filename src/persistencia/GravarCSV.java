@@ -28,7 +28,7 @@ public class GravarCSV implements Gravacao {
 				a = new Aluno();
 				a.setNome(leitura[0]);
 				a.setMatricula(Integer.parseInt(leitura[1]));
-				a.setCpf(Integer.parseInt(leitura[2]));
+				a.setCpf(leitura[2]);
 				a.setDataNasc(ListaAlunos.retornaData(leitura[3]));
 				a.setEmail(leitura[4]);
 				;
@@ -49,7 +49,7 @@ public class GravarCSV implements Gravacao {
 			FileWriter arq = new FileWriter("alunos.csv", true);
 			PrintWriter gravarArq = new PrintWriter(arq);
 			for (Aluno aluno : lista) {
-				gravarArq.printf("%s,%d,%d,%s,%s\n", aluno.getNome(), aluno.getMatricula(), aluno.getCpf(), ListaAlunos.retornaData(aluno.getDataNasc()), 
+				gravarArq.printf("%s,%d,%s,%s,%s\n", aluno.getNome(), aluno.getMatricula(), aluno.getCpf(), ListaAlunos.retornaData(aluno.getDataNasc()), 
 														   aluno.getEmail());
 			}
 			

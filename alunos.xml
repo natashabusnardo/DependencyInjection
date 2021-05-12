@@ -4,7 +4,7 @@
   <void method="add">
    <object class="model.Aluno">
     <void property="cpf">
-     <int>1088601958</int>
+     <string>123.456.789-11</string>
     </void>
     <void property="dataNasc">
      <object class="java.util.Date">
@@ -12,7 +12,7 @@
      </object>
     </void>
     <void property="email">
-     <string>guichato@gmail.com</string>
+     <string>email@email.com</string>
     </void>
     <void property="matricula">
      <int>70854517</int>

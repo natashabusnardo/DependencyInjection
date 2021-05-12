@@ -31,7 +31,7 @@ public class GravarJSON implements Gravacao {
 				a = new Aluno();
 				a.setNome(leitura[0]);
 				a.setMatricula(Integer.parseInt(leitura[1]));
-				a.setCpf(Integer.parseInt(leitura[2]));
+				a.setCpf(leitura[2]);
 				a.setDataNasc(ListaAlunos.retornaData(leitura[3]));
 				a.setEmail(leitura[4]);
 				lista.add(a);

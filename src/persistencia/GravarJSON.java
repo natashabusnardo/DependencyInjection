@@ -53,7 +53,7 @@ public class GravarJSON implements Gravacao {
 
 			Gson gson = builder.create();
 
-			FileWriter writer = new FileWriter("pedidos.json", true);
+			FileWriter writer = new FileWriter("alunos.json", true);
 
 			writer.write(gson.toJson(lista, ListaAlunos.class));
 

@@ -44,13 +44,13 @@ public class ListaAlunos {
 	}*/
 
 	public static String retornaData(Date data) {
-		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 		String dataString = format.format(data);
 		return dataString;
 	}
 
 	public static Date retornaData(String data) throws ParseException {
-		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
 		Date dataDate = format.parse(data);
 		return dataDate;
 	}
